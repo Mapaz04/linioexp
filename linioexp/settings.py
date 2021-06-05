@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages'
+    'storages' #lab6
 ]
 
 MIDDLEWARE = [
@@ -115,9 +115,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-#lab6
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -128,6 +125,11 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = '94403fa9d91394'
 EMAIL_HOST_PASSWORD = 'ec43bde2ad3163'
 EMAIL_PORT = '2525'
+
+#lab6
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 #Dropbox - Lab6
 

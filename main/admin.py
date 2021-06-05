@@ -18,6 +18,7 @@ class ProfileAdmin(admin.ModelAdmin):
 class ProductoImageInline(admin.TabularInline):
     model=ProductoImage
 
+
 class ProductoAdmin(admin.ModelAdmin):
     inlines = [
         ProductoImageInline,
@@ -31,4 +32,6 @@ admin.site.register(Proveedor)
 admin.site.register(Cliente)
 admin.site.register(Colaborador)
 admin.site.register(Profile, ProfileAdmin)
+
+
 admin.site.register(Producto, ProductoAdmin)
